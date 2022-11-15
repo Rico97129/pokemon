@@ -1,0 +1,25 @@
+<%-include('../includes/header') %>
+
+<% for(var i = 0; i < response.pokemons.length; i++) {%>
+    <div  class="Card" style="background-color: <%=response.pokemons[i].background_color %>" >
+        <div class="header"> <p class="name"><%=response.pokemons[i].name %></p>
+         <p class = "level" > Niv.<%=response.pokemons[i].level %></p>
+     </div>
+         <div class="image">
+             <img src="<%=response.pokemons[i].image %>" alt="" srcset="">
+         </div>
+   
+    <% for(var a = 0; a < response.pokemons[i].abilities.length; a++) {%>
+        <div>
+   <div class="abilities">
+        <span class="AbIcon"><%=response.pokemons[i].abilities[a].icon%></span>
+        <span class="AbName"><%=response.pokemons[i].abilities[a].name%></span>
+        <span class="AbLevel"><%=response.pokemons[i].abilities[a].power%></span>  
+    </div>
+</div>
+    
+    <p><%=response.pokemons[i].abilities[a].description%></p>
+</div>
+    <% } %>
+    
+  <% } %>

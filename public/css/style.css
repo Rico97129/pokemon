@@ -1,0 +1,47 @@
+.Card{
+  font-size: 8px;
+  margin-top: 10%;
+  margin-bottom: 50px;
+  margin: auto ;
+  height:310px ;
+  width: 250px;
+
+}
+.image{
+  margin: auto ; 
+ margin-top:5%;
+ width:220px ;
+ height:100px ;
+  background-image: url(../images/fond-carte.jpg);
+  background-size: cover;
+}
+.name{
+  margin-top: 0 ;
+  margin-left : 0;
+  float:left;
+}
+.level{
+  float:right;
+  margin-top: 0 ;
+  margin-right : 0px;
+}
+.header{
+  width: 100%;
+  height: 15px;
+}
+.AbIcon{
+  float:left;
+  margin-top: 0 ;
+  margin-right : 0px;
+}
+.AbLevel{
+  float:right;
+  margin-top: 0 ;
+  margin-left : 0px;
+}
+.AbName{
+  margin-left:55px;
+}
+.abilities{
+  margin-top: 15px 
+}
